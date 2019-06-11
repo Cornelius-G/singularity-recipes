@@ -1,0 +1,25 @@
+Bootstrap:docker
+From:ubuntu:18.04
+
+
+%environment
+    PATH=$PATH:/julia-1.1.1/bin
+    export JULIA_DEPOT_PATH="/julia-1.1.1/share/julia" 
+
+%files
+
+    packages.jl
+
+%post
+    
+    apt-get update
+
+    apt-get install -y wget
+
+    wget https://julialang-s3.julialang.org/bin/linux/x64/1.1/julia-1.1.1-linux-x86_64.tar.gz
+    tar xvfa julia-1.1.1-linux-x86_64.tar.gz
+    rm -f julia-1.1.1-linux-x86_64.tar.gz
+
+    
+    PATH=$PATH:/julia-1.1.1/bin
+    #julia -e "using Pkg; Pkg.add(\"LsqFit\")" # ERROR

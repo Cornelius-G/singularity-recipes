@@ -1,0 +1,23 @@
+Bootstrap:docker
+From:ubuntu:18.04
+
+
+%post
+    
+    apt-get update
+
+    # install python 3.6 and packages
+    apt-get install -y python3-numpy
+    apt-get install -y python3-scipy
+    apt-get install -y python3-pandas
+    apt-get install -y python3-matplotlib
+
+    # install jupyter notebook
+    apt-get install -y python3-pip
+    python3 -m pip install jupyter
+
+    # you can install further packages using:
+    # python3 -m pip install packagename
+
+    # clean up
+    apt-get -y clean

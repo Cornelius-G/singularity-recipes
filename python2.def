@@ -1,0 +1,23 @@
+Bootstrap:docker
+From:ubuntu:18.04
+
+
+%post
+    
+    apt-get update
+
+    # install python 2.7 and packages
+    apt-get install -y python-numpy
+    apt-get install -y python-scipy
+    apt-get install -y python-pandas
+    apt-get install -y python-matplotlib
+
+    # install jupyter notebook
+    apt-get install -y python-pip
+    python -m pip install jupyter
+
+    # you can install further packages using:
+    # python -m pip install packagename
+
+    # clean up
+    apt-get -y clean
