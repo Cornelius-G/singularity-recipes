@@ -1,0 +1,15 @@
+Bootstrap: docker
+From: smflment/cern-root:6-16
+
+%environment
+
+    LD_LIBRARY_PATH=/usr/local/root-6.16.00/lib:$LD_LIBRARY_PATH
+    DYLD_LIBRARY_PATH=/usr/local/root-6.16.00/lib
+    ROOTSYS=/usr/local/root-6.16.00
+    CMAKE_PREFIX_PATH=/usr/local/root-6.16.00
+    JUPYTER_PATH=/usr/local/root-6.16.00/etc/notebook
+    SHLIB_PATH=/usr/local/root-6.16.00/lib
+    PYTHONPATH=/usr/local/root-6.16.00/lib
+    MANPATH=/usr/local/root-6.16.00/man:
+    PATH=/usr/local/root-6.16.00/bin:$PATH
+    ROOT_VERSION=6.16.00
