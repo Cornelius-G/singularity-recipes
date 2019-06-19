@@ -22,10 +22,16 @@ This repository is a collection of my recipes for building singularity container
 ## Building the container
 `sudo singularity build python2.sif python2.def`
 
+## Runing singularity images
+For an interactive shell session:  
+`singularity shell image.sif` 
+
+To run a specific command:  
+`singularity exec image.sif command`
+
 ## Run jupyter notebooks (for python2 & python3): 
-currently only works as sudo user:
+To run a jupyter notebook you need to pass the `--bind` option to tell singularity where to write temporary session data.  
+So for example you can run the notebook using:  
+`singularity exec --bind /tmp:/run/user python2.sif jupyter notebook`
 
-1. `sudo singularity shell python2.sif`
-
-2. `jupyter notebook --allow-root`
 	
