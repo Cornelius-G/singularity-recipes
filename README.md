@@ -31,7 +31,10 @@ To run a specific command:
 
 ## Run jupyter notebooks (for python2 & python3): 
 To run a jupyter notebook you need to pass the `--bind` option to tell singularity where to write temporary session data.  
-So for example you can run the notebook using:  
-`singularity exec --bind /tmp:/run/user python2.sif jupyter notebook`
+So for example you can run the notebook directly using:  
+`singularity exec --bind /tmp:/run/user python2.sif jupyter notebook`  
 
+Or from shell:  
+1. `singularity shell --bind /tmp:/run/user python2.sif`  
+2. `jupyter notebook`
 	
