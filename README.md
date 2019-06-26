@@ -10,14 +10,23 @@ This repository is a collection of my recipes for building singularity container
 + numpy,  scipy,  pandas, matplotlib
 
 ### python3
-+  Ubuntu 18.04
++ Ubuntu 18.04
 + python 3.6
 + jupyter notebook
 + numpy,  scipy,  pandas, matplotlib
 
 ### julia
-+  Ubuntu 18.04
++ Ubuntu 18.04
 + julia 1.1.1
+
+### ROOT
++ Ubuntu 18.04
++ ROOT 6.16.00
+
+### Geant4
++ Ubuntu 18.04
++ ROOT 6.16.00
++ Geant4 10.5.1
 
 ## Building the container
 `sudo singularity build python2.sif python2.def`
