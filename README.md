@@ -31,7 +31,7 @@ This repository is a collection of my recipes for building singularity container
 ## Building the container
 `sudo singularity build python2.sif python2.def`
 
-## Runing singularity images
+## Run singularity images
 For an interactive shell session:  
 `singularity shell image.sif` 
 
