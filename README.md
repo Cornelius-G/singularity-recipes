@@ -1,5 +1,7 @@
 # Singularity-recipes
-This repository is a collection of my recipes for building singularity containers.
+This repository collects recipes for building singularity containers.  
+Currently singularity definition files and Dockerfiles are available, though Dockerfiles should be the preferred way for building the containers.   
+The python script `dockerfile2sif.py` helps to locally build a `.sif` singularity image from a Dockerfile (i.e. without using dockerhub).
 
 ## Available recipes
 
