@@ -35,30 +35,15 @@ Or using the interactive shell:
 2. `jupyter notebook`
 	
 
-## Available recipes
-(will be updated)
+## Tips when running docker & singularity on a system with little memory
+Change singularity cache and tmp directories:
+`SINGULARITY_TMPDIR` and  
+`SINGULARITY_CACHEDIR`
 
-### python2
-+ Ubuntu 18.04
-+ python 2.7
-+ jupyter notebook
-+ numpy,  scipy,  pandas, matplotlib
+Clean singularity cache:
+`sudo singularity cache clean`
 
-### python3
-+ Ubuntu 18.04
-+ python 3.6
-+ jupyter notebook
-+ numpy,  scipy,  pandas, matplotlib
-
-### julia
-+ Ubuntu 18.04
-+ julia 1.1.1
-
-### ROOT
-+ Ubuntu 18.04
-+ ROOT 6.16.00
-
-### Geant4
-+ Ubuntu 18.04
-+ ROOT 6.16.00
-+ Geant4 10.5.1
+Clean Docker:
+`sudo docker system prune`
+or
+`sudo docker image prune` and `sudo docker contaienr prune`

@@ -1,0 +1,13 @@
+using Pkg
+pkg"add BAT"
+pkg"add ArraysOfArrays"
+pkg"add Distributions"
+pkg"add ElasticArrays"
+pkg"add IntervalSets"
+pkg"add Parameters"
+pkg"add Plots"
+pkg"add ValueShapes"
+pkg"add StatsBase"
+pkg"add Tables"
+pkg"add TypedTables"
+pkg"add IJulia"
